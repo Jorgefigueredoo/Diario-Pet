@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/api/diario/diarios";
+const API_URL = "https://diario-pet.onrender.com/api/diario/diarios";
 
 const form = document.getElementById("diario-form");
 const idInput = document.getElementById("diario-id");
