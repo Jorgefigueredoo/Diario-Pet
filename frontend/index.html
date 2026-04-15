@@ -37,6 +37,35 @@
       <div id="status" class="status"></div>
       <ul id="diarios-list"></ul>
     </section>
+
+    <section class="form-section">
+      <h2 id="produto-form-title">Novo produto</h2>
+      <form id="produto-form">
+        <input type="hidden" id="produto-id" />
+        <label>
+          Nome
+          <input type="text" id="produto-nome" required placeholder="Ex: Ração Premium" />
+        </label>
+        <label>
+          Preço
+          <input type="number" id="produto-preco" step="0.01" min="0" required placeholder="Ex: 49.90" />
+        </label>
+        <label>
+          Descrição
+          <textarea id="produto-descricao" rows="3" placeholder="Detalhes do produto..."></textarea>
+        </label>
+        <div class="form-actions">
+          <button type="submit" id="produto-submit-btn">Salvar</button>
+          <button type="button" id="produto-cancel-btn" class="secondary" hidden>Cancelar</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="list-section">
+      <h2>Produtos</h2>
+      <div id="produto-status" class="status"></div>
+      <ul id="produtos-list"></ul>
+    </section>
   </main>
 
   <script src="app.js"></script>
