@@ -16,7 +16,7 @@ exports.updateDiario = async (req, res) => {
 };
 
 exports.deleteDiario = async (req, res) => { 
-    const diario = await Diario.findByIdAndRemove(req.params.id);
+    const diario = await Diario.findByIdAndDelete(req.params.id);
     res.json({m: 'Diário deletado com sucesso'});
 
 };
